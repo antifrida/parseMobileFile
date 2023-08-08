@@ -14,6 +14,7 @@ public class ParseDexTest {
         try {
             DexParser dexParser = new DexParser(new FileInputStream(file), Utils.readAll(file));
             dexParser.parse();
+            // hello
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
