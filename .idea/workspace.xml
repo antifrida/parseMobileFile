@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fd22575c-120f-4261-856a-efdd21fc3f5f" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ParseDexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ParseDexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/antifrida/dex/DexParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/antifrida/dex/DexParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/antifrida/utils/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/antifrida/utils/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value=" TransformUtils.bytes2UnsignedShort(Utils.copy(dexData, code_off + 16 + i * 2, 2));" />
+      <command value="1+1" />
+    </option>
+  </component>
   <component name="RunManager" selected="JUnit.ParseDexTest.parse">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.antifrida.Test" />
@@ -149,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691497256363</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1691497903159</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691497903160</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,9 +219,9 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <condition expression="i==4" language="JAVA" />
+          <condition expression="i==6107" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/main/java/com/antifrida/dex/DexParser.java</url>
-          <line>201</line>
+          <line>202</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>

@@ -1,8 +1,6 @@
 package com.antifrida.utils;
 
-import java.io.EOFException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 import com.antifrida.utils.Utils;
 
@@ -15,13 +13,17 @@ public class Reader {
     private static boolean showLog = true;
     private boolean isLittleEndian = true;
 
-    public Reader(InputStream in) {
+    public Reader(InputStream in) throws FileNotFoundException {
         this(in, true);
     }
 
-    public Reader(InputStream in, boolean isLittleEndian) {
+    public Reader(InputStream in, boolean isLittleEndian) throws FileNotFoundException {
         this.in = in;
         this.isLittleEndian = isLittleEndian;
+
+        // redirect log to file
+        PrintStream out = new PrintStream("/root/IdeaProjects/parseMobileFile/src/main/java/com/antifrida/dex/parse.log");
+        System.setOut(out);
     }
 
     /**
